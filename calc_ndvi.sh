@@ -6,11 +6,11 @@ echo "Assignment 4"
 echo "Calculate NDVI from Landsat 7 Image"
 echo "Resample NDVI Image to 60 m Resolution"
 
-fn=$(ls LE*.tif)
+fn=$(ls data/LE*.tif)
 echo "input file: $fn"
-ndvi="NDVI.tif"
-fntemp="NDVI60m.tif"
-fnout="NDVI60mLatLong.tif"
+ndvi="data/NDVI.tif"
+fntemp="data/NDVI60m.tif"
+fnout="data/NDVI60mLatLong.tif"
 
 echo "calculate Normalized Difference Vegetation Index"
 echo "NDVI is a ratio calculated from the difference between NIR and RED reflectance"
